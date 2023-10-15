@@ -1,0 +1,31 @@
+.pad{
+    padding: 0 30px;
+}
+
+.dash-margin{
+    margin-bottom: 36px;
+    font-weight: normal;
+}
+
+.help-margin{
+    margin-bottom: 30px;
+}
+
+.fa{
+    font-size: 10px;
+    margin-right: 20px;
+}
+
+.btn-align{
+    float: right;
+}
+
+.m-footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.m-width{
+    min-width: 50vw;
+}

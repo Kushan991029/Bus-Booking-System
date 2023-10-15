@@ -1,0 +1,183 @@
+.main-ticket{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.ticket-system1 {
+    max-width: 385px;
+}
+
+.ticket-system1 .top1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.ticket-system1 .top1 .title1 {
+    font-weight: normal;
+    font-size: 1.6em;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.ticket-system1 .top1 .printer1{
+    width: 90%;
+    height: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.receipts-wrapper1{
+    overflow: hidden;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.receipts1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-510px);
+
+    animation-duration: 2.5s;
+    animation-delay: 500ms;
+    animation-name: print;
+    animation-fill-mode: forwards;
+}
+
+.receipt1{
+    padding: 25px 30px;
+    text-align: left;
+    min-height: 200px;
+    width: 88%;
+    background-color: #fff;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.route1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.plane-icon1{
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+}
+
+h2.r1{
+    font-weight: 300;
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.airliner-logo1{
+    max-width: 80px;
+}
+
+.details1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.details .item1{
+    display: flex;
+    flex-direction: column;
+    min-width: 70px;
+}
+
+.details1 .item1 span {
+    font-size: 0.8em;
+    color: rgba(28, 28, 28, 0.7);
+    font-weight: 500;
+}
+
+.details1 .item1 h3{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.qr-code1 {
+    height: 110px;
+    min-height: unset;
+    position: relative;
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.qr-code1::before {
+    content: "";
+    background: linear-gradient(to right, #fff 50%, #3f32e5 50%);
+    background-size: 22px 4px, 100% 4px;
+    height: 4px;
+    width: 90%;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -1px;
+    position: absolute;
+    margin: auto;
+}
+
+.qr1 {
+    width: 70px;
+    height: 70px;
+}
+
+.description1{
+    margin-left: 20px;
+}
+
+.description1 h2 {
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.description1 p{
+    margin: 0;
+    font-weight: 400;
+}
+
+@keyframes print {
+    0% {
+        transform: translateY(-510px);
+    }
+
+    35% {
+        transform: translateY(-395px);
+    }
+
+    70% {
+        transform: translateY(-140px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.ticket-new{
+    width: 250px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.row-one{
+    display: flex;
+    justify-content: space-between;
+}

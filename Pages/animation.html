@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Animation</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Search Box CSS Files -->
+
+    <link rel="stylesheet" href="../assets-travelbox/css/style.css" />
+
+
+</head>
+
+<body>
+
+    <!-- ======= Travel Menu Section ======= -->
+
+    <div class="tagline visible-lg" id="tagline" style="color: black;">
+        <span  style="color: black;">Travel to</span>
+        <ul>
+            <li class="active">Jaffna</li>
+            <li>Batticaloa</li>
+            <li>Ampara</li>
+            <li>Trincomalee</li>
+            <li>Mannar</li>
+            <li>Hatton</li>
+            <li>Badulla</li>
+            <li>Matara</li>
+            <li>Anuradhapura</li>
+            <li>Polannaruwa</li>
+            <li>Hambantota</li>
+            <li>Kilinochi</li>
+            <li>Vavuniya</li>
+            <li>Mullaiththivu</li>
+            <li>Gampaha</li>
+            <li>Kalutara</li>
+            <li>Galle</li>
+            <li>Matale</li>
+            <li>Nuwara Eliya</li>
+            <li>Moneragala</li>
+            <li>Kegalle</li>
+            <li>Ratnapura</li>
+            <li>Kuruenegala</li>
+            <li>Puttalam</li>
+            <li>Colombo</li>
+        </ul>
+    </div>
+
+
+    <!-- Travel menu JS Files -->
+    <script type="application/javascript">
+        var tid = setInterval(tagline_vertical_slide, 2500);
+
+        // vertical slide
+        function tagline_vertical_slide() {
+            var curr = $("#tagline ul li.active");
+            curr.removeClass("active").addClass("vs-out");
+            setTimeout(function () {
+                curr.removeClass("vs-out");
+            }, 500);
+
+            var nextTag = curr.next('li');
+            if (!nextTag.length) {
+                nextTag = $("#tagline ul li").first();
+            }
+            nextTag.addClass("active");
+        }
+    </script>
+
+    <!-- Slider JS Files -->
+    <script src="../assets-image-slider/js/jquery.min.js"></script>
+
+
+
+</body>
+
+</html>
